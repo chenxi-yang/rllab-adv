@@ -30,7 +30,7 @@ parser.add_argument('--n_adv_itr', type=int, default=10, help='Number of interat
 parser.add_argument('--batch_size', type=int, default=4000, help='Number of training samples for each iteration')
 parser.add_argument('--save_every', type=int, default=2, help='Save checkpoint every save_every iterations')
 parser.add_argument('--n_process', type=int, default=1, help='Number of parallel threads for sampling environment')
-parser.add_argument('--adv_fraction', type=float, default=0.01, help='fraction of maximum adversarial force to be applied')
+parser.add_argument('--adv_fraction', type=float, default=1.0, help='fraction of maximum adversarial force to be applied')
 parser.add_argument('--step_size', type=float, default=0.01, help='kl step size for TRPO')
 parser.add_argument('--gae_lambda', type=float, default=0.97, help='gae_lambda for learner')
 parser.add_argument('--folder', type=str, default=os.environ['HOME'], help='folder to save result in')
